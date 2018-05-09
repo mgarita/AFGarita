@@ -1,0 +1,43 @@
+## create objects in Python
+
+class SimpleClass():
+    
+    def _init_(self):
+        print("hello")
+
+s = "world"
+
+type(s)
+
+x = SimpleClass
+
+x
+
+x = SimpleClass()
+
+x
+
+class SimpleClass():
+    
+    def __init__(self):
+        print("hello")
+    
+    def yell(self):
+        print("Yelling")
+
+x = SimpleClass()
+
+x.yell()
+
+class ExtendedClass(SimpleClass):
+    
+    def __init__(self):
+        
+        super().__init__()
+        print("Extend!")
+
+y = ExtendedClass()
+
+y
+
+y.yell()
